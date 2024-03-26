@@ -14,19 +14,23 @@ Create a empty folder and go to the folder and execute the command “**conda cr
 
 **constants.py** - You can store the OPEN API key in this file and import in your modules. This is not a recommended approach, just for your local development purpose.
 
-**Basic text search **
+**Basic text search**
     **movie_list_llm_search.py** (Without Prompt Template) - Generates top movie names list using the OpenAI Large Language Model (LLM)
     **Dependencies** : `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module
    
 **Basic text search using Prompt Template**
        **movie_list_search_using_template.py** (Using Prompt Template) - creates an OpenAI LLM object, uses a prompt template to influence  the output, and returns the generated response.
+       
        **Dependencies** `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module | `PromptTemplate` from 
                `langchain.prompts` (for creating structured prompts) | `LLMChain` from `langchain.chains` (for building LLM workflows).
-        Execute : **python movie_list_llm_search.py | python movie_list_search_using_template.py**
+               
+        **Execute** : python movie_list_llm_search.py | python movie_list_search_using_template.py
 
 **Basic text search using Prompt Template + Streamlit (Web-based)**   
       **movie_list_search_streamlit.py** : Performing the same movie search through simple web interface  using streamlit
+      
       **Dependencies** : `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module | `PromptTemplate` from 
                `langchain.prompts` (for creating structured prompts) | `LLMChain` from `langchain.chains` (for building LLM workflows) | Streamlit for building a web app interface
-        Execute  :   **streamlit run movie_list_search_streamlit.py**   
+               
+        **Execute**  :   streamlit run movie_list_search_streamlit.py
 
