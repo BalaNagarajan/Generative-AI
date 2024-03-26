@@ -11,17 +11,19 @@ Create a empty folder and go to the folder and execute the command “**conda cr
 6. **pip install -r requirements.txt**  (Command is used in Python to install dependencies listed in a requirements file) . ‘-r’ – This flag tells pip to read package names and their versions from requirements file.
 
 **Examples:**
-• **Basic text search **
+
+**Basic text search **
 1. **constants.py** - You can store the OPEN API key in this file and import in your modules. This is not a recommended approach, just for your local development purpose.
 2. **movie_list_llm_search.py** (Without Prompt Template) - Generates top movie names list using the OpenAI Large Language Model (LLM)
            a. **Dependencies** : `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module
-•**Basic text search using Prompt Template**
-3. **movie_list_search_using_template.py** (Using Prompt Template) - creates an OpenAI LLM object, uses a prompt template to influence  the output, and returns the generated response.
+   
+**Basic text search using Prompt Template**
+4. **movie_list_search_using_template.py** (Using Prompt Template) - creates an OpenAI LLM object, uses a prompt template to influence  the output, and returns the generated response.
           a. **Dependencies : ** `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module | `PromptTemplate` from 
                `langchain.prompts` (for creating structured prompts) | `LLMChain` from `langchain.chains` (for building LLM workflows).
  Execute : **python movie_list_llm_search.py | python movie_list_search_using_template.py**
 
-•**Basic text search using Prompt Template + Streamlit (Web-based)**   
+**Basic text search using Prompt Template + Streamlit (Web-based)**   
 4. **movie_list_search_streamlit.py** : Performing the same movie search through simple web interface  using streamlit
           a.  **Dependencies** : `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module | `PromptTemplate` from 
                `langchain.prompts` (for creating structured prompts) | `LLMChain` from `langchain.chains` (for building LLM workflows) | Streamlit for building a web app interface
