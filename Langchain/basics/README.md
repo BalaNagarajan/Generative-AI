@@ -11,3 +11,6 @@ Create a empty folder and go to the folder and execute the command “**conda cr
 6. **pip install -r requirements.txt**  (Command is used in Python to install dependencies listed in a requirements file) . ‘-r’ – This flag tells pip to read package names and their versions from requirements file.
 
 **Examples:**
+1. **constants.py **- You can store the OPEN API key in this file and import in your modules. This is not a recommended approach, just for your local development purpose.
+2. **movie_list_llm_search.py** - Generates top movie names list using the OpenAI Large Language Model (LLM)
+           a. **Dependencies** : `OpenAI` class for interacting with the OpenAI API | `os` module for working with the operating system | `openai_key` variable from the `constants` module
