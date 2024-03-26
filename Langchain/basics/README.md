@@ -1,1 +1,4 @@
-# Generative-AI
+# Lang Chain Basics
+
+Project Setup:
+===============
